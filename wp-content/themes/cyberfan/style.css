@@ -1,0 +1,16 @@
+/*
+Theme Name:   CP2077 Child — Cyberfan
+Theme URI:    http://cyberfan.local
+Description:  Дочерняя тема GeneratePress для фанатской вики Cyberpunk 2077 в стиле «нейроинтерфейса». Данные (типы записей, поля) живут в плагине CP2077 Wiki Core.
+Author:       Cyberfan
+Template:     generatepress
+Version:      1.0.0
+Requires PHP: 8.0
+Text Domain:  cp2077-child
+License:      GPL-2.0-or-later
+*/
+
+/*
+ * Этот файл нужен WordPress, чтобы распознать тему.
+ * Весь дизайн лежит в assets/css/main.css (подключается в inc/enqueue.php).
+ */

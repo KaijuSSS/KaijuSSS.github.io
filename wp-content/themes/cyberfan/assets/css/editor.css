@@ -1,0 +1,122 @@
+/*
+ * Стили внутри редактора Gutenberg: тёмный фон и паттерны гайдов
+ * (шаг, предупреждение, спойлер, развилка) выглядят так же, как на сайте.
+ * WordPress сам ограничивает эти правила областью редактора.
+ */
+
+body {
+	background: #0A0A0F;
+	color: #E6E6E6;
+	font-family: "Exo 2", system-ui, sans-serif;
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Orbitron", "Exo 2", sans-serif;
+	color: #E6E6E6;
+	letter-spacing: .02em;
+}
+
+h2 { border-left: 4px solid #FCEE0A; padding-left: 14px; text-transform: uppercase; }
+h3 { color: #00F0FF; }
+
+a { color: #00F0FF; }
+
+.editor-post-title,
+.editor-post-title__input {
+	font-family: "Orbitron", "Exo 2", sans-serif;
+	text-transform: uppercase;
+	color: #FCEE0A;
+}
+
+blockquote,
+.wp-block-quote {
+	border-left: 3px solid #FF2A6D;
+	background: linear-gradient(90deg, rgba(255, 42, 109, .1), transparent 80%);
+	padding: 16px 20px;
+}
+
+table, th, td { border-color: #2A2A3A; }
+thead th { color: #FCEE0A; border-bottom: 2px solid #FCEE0A; }
+
+.wp-block-button__link {
+	background: #FCEE0A;
+	color: #000;
+	border-radius: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+/* Шаг гайда */
+.cp-step {
+	margin: 18px 0;
+	padding: 16px 18px 16px 22px;
+	background: #12121A;
+	border: 1px solid #2A2A3A;
+	border-left: 3px solid #00F0FF;
+}
+
+.cp-step::before {
+	content: "ШАГ ГАЙДА · станет чекбоксом на странице квеста";
+	display: block;
+	font-family: "Share Tech Mono", monospace;
+	font-size: 11px;
+	letter-spacing: .12em;
+	color: #00F0FF;
+	margin-bottom: 6px;
+}
+
+.cp-step h3 { margin: 0; color: #E6E6E6; text-transform: uppercase; font-size: 1.05rem; }
+
+/* Предупреждение */
+.cp-warning {
+	margin: 18px 0;
+	padding: 12px 16px;
+	background: repeating-linear-gradient(-45deg, rgba(252, 238, 10, .09) 0 10px, transparent 10px 20px), rgba(255, 0, 60, .08);
+	border: 1px solid rgba(252, 238, 10, .45);
+	color: #FFF7B0;
+}
+
+.cp-warning strong { color: #FCEE0A; }
+
+/* Спойлер */
+.cp-spoiler {
+	margin: 18px 0;
+	border: 1px dashed #FF2A6D;
+	background: rgba(255, 42, 109, .05);
+	padding: 10px 16px;
+}
+
+.cp-spoiler summary {
+	color: #FF2A6D;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+/* Развилка */
+.cp-fork {
+	margin: 22px 0;
+	padding: 14px;
+	border: 1px solid #2A2A3A;
+	background: rgba(18, 18, 26, .6);
+}
+
+.cp-fork__label {
+	font-family: "Share Tech Mono", monospace;
+	color: #FCEE0A;
+	text-transform: uppercase;
+	letter-spacing: .14em;
+	font-size: 13px;
+}
+
+.cp-choice {
+	padding: 12px 14px;
+	border: 1px solid #3A3A50;
+	background: #0A0A0F;
+}
+
+.cp-choice h4 { margin: 0 0 6px; color: #00F0FF; text-transform: uppercase; }
+.cp-choice:nth-child(2) h4 { color: #FF2A6D; }
